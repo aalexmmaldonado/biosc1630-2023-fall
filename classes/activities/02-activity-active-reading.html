@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="2023-09-10T21:25:14-04:00" property="article:modified_time"/>
+<title>Active reading — Pitt BIOSC 1630 - 2023 Fall</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" rel="preload"/>
+<link as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" rel="preload"/>
+<script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script>
+<script src="../../_static/underscore.js"></script>
+<script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../_static/doctools.js"></script>
+<script src="../../_static/clipboard.min.js"></script>
+<script src="../../_static/copybutton.js"></script>
+<script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../_static/togglebutton.js"></script>
+<script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+<script data-domain="aalexmmaldonado.com/biosc1630-2023-fall" defer="defer" src="https://plausible.io/js/script.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../../_static/sphinx-thebe.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'classes/activities/02-activity-active-reading';</script>
+<link href="www.aalexmmaldonado.com/biosc1630-2023-fall/classes/activities/02-activity-active-reading.html" rel="canonical"/>
+<link href="../../_static/favicon.ico" rel="shortcut icon"/>
+<link href="../../genindex.html" rel="index" title="Index"/>
+<link href="../../search.html" rel="search" title="Search"/>
+<link href="02-activity-role-based-analysis.html" rel="next" title="Role-based analysis"/>
+<link href="02-activity-reading-for-gist.html" rel="prev" title="Reading for gist"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<a class="navbar-brand logo" href="../../index.html">
+<img alt="Logo image" class="logo__image only-light" src="../../_static/biosc-1630-logo.svg"/>
+<script>document.write(`<img src="../../_static/biosc-1630-logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+</a></div>
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lessons/index.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lessons/lesson-01.html">Lesson 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons/lesson-02.html">Lesson 02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lessons/lesson-03.html">Lesson 03</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Activities</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01-activity-practice-feedback.html">01 - Practice providing feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01-activity-literature-search.html">01 - Finding literature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-activity-reading-for-gist.html">02 - Reading for gist</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">02 - Active reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02-activity-role-based-analysis.html">02 - Role-based analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03-activity-method-recommendation.html">03 - Method recommendation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../slides/index.html">Slides</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../slides/slides-01.html">01 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../slides/slides-02.html">02 - Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../slides/slides-03.html">03 - Methodology</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../assignments/assignment-01.html">Assignment 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../assignments/assignment-02.html">Assignment 02</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/paper/index.html">Paper</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/solutions/index.html">Solutions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/comp-bio/index.html">Computational biology</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/comp-bio/journals.html">Scientific journals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/comp-bio/comp-bio-topics.html">Topics in computational biology</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/presenting/index.html">Presenting</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/presenting/design-frameworks.html">Design frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/presenting/effective-strategies.html">Effective strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/presenting/accessibility.html">Accessibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../misc/index.html">Miscellaneous</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/interfaith-holidays.html">Interfaith holidays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/generative-ai-primer.html">Generative AI primer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/RAND-shopping-study.html">RAND shopping study</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/refs.html">References</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../admin/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/getting-to-class.html">Getting to class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/drop-in-discussions.html">Drop-in discussions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/class-time.html">Is it time for class?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Easter egg</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../easter-egg/index.html">Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../easter-egg/enigma-elites.html">Comp Bio Enigma Elites</a></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label></div>
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
+<div class="article-header-buttons">
+<div class="dropdown dropdown-source-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/issues/new?title=Issue%20on%20page%20%2Fclasses/activities/02-activity-active-reading.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="../../_sources/classes/activities/02-activity-active-reading.md" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+</ul>
+</div>
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Active reading</h1>
+<!-- Table of contents -->
+
+</div>
+<div id="searchbox"></div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="active-reading">
+<span id="activity-active-reading"></span><h1>Active reading<a class="headerlink" href="#active-reading" title="Permalink to this heading">#</a></h1>
+<p><strong>Total duration:</strong> 50 minutes</p>
+<section id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this heading">#</a></h2>
+<p>The objective is to engage students in active reading techniques to promote deep comprehension and critical analysis of scientific articles.</p>
+</section>
+<section id="form-groups">
+<span id="activity-active-reading-form-group"></span><h2>Form groups<a class="headerlink" href="#form-groups" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 0 minutes</p>
+<p>Groups should already be formed from <a class="reference internal" href="02-activity-reading-for-gist.html#activity-read-for-gist-form-group"><span class="std std-ref">this activity</span></a>.</p>
+</section>
+<section id="article-selection">
+<span id="activity-active-reading-article-selection"></span><h2>Article selection<a class="headerlink" href="#article-selection" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 0 minutes</p>
+<p>Students should have selected an article from <a class="reference internal" href="02-activity-reading-for-gist.html#activity-read-for-gist-article-selection"><span class="std std-ref">this activity</span></a> earlier.</p>
+</section>
+<section id="id1">
+<h2>Active reading<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 30 minutes</p>
+<p>Now, start reading the scientific article using these active reading techniques.
+While reading, note crucial information you need to answer the <a class="reference internal" href="#activity-active-reading-discussion-questions"><span class="std std-ref">following discussion questions</span></a>.</p>
+<section id="summarizing">
+<h3>Summarizing<a class="headerlink" href="#summarizing" title="Permalink to this heading">#</a></h3>
+<p>As you engage with the scientific paper, make it a habit to <strong>periodically pause and summarize what you’ve read in your own words</strong>.
+This summarization process is a crucial checkpoint, ensuring you can clearly articulate the paper’s main ideas.
+Consider the broader context of the research and distill the key points into concise summaries.
+This practice solidifies your understanding and enables you to communicate the paper’s main concepts.</p>
+</section>
+<section id="annotating">
+<h3>Annotating<a class="headerlink" href="#annotating" title="Permalink to this heading">#</a></h3>
+<p>Understand that annotating the text is a powerful tool for enhancing your active reading experience.
+While reading, feel free to <strong>underline or highlight key passages</strong> that strike you as particularly important or insightful.
+Additionally, <strong>write marginal notes or comments</strong> that capture your thoughts, questions, or interpretations.
+You can even employ symbols or codes to mark critical information.
+Annotation transforms your reading into an interactive process, making it easier to revisit and review essential points later.
+It also serves as a personal dialogue with the text, enabling you to engage more deeply with the material and uncover nuanced insights.</p>
+</section>
+</section>
+<section id="discussion-questions">
+<span id="activity-active-reading-discussion-questions"></span><h2>Discussion questions<a class="headerlink" href="#discussion-questions" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Research objectives:</strong>
+What are the main research objectives or questions addressed in the paper?
+Are they clearly stated and well-defined?</p></li>
+<li><p><strong>Methodology:</strong>
+Can you describe the methods and techniques used in the study?
+Are they appropriate for the research questions, and are there any potential limitations or alternative approaches?</p></li>
+<li><p><strong>Key findings:</strong>
+What are the primary findings or results presented in the paper?
+Do these findings align with the research objectives, and does robust evidence support them?</p></li>
+<li><p><strong>Data analysis:</strong>
+How was the data analyzed, and were the statistical or computational methods appropriate for the study?
+Are there any potential biases or sources of error?</p></li>
+<li><p><strong>Interpretation:</strong>
+How do the authors interpret the results?
+Do they clearly explain the implications of their findings within the broader context of computational biology?</p></li>
+<li><p><strong>Comparisons:</strong>
+Does the paper make comparisons with existing research or related studies?
+Does it contribute novel insights or build upon existing knowledge?</p></li>
+<li><p><strong>Future directions:</strong>
+Are there suggestions for future research or areas where further investigation is needed based on the paper’s conclusions?</p></li>
+<li><p><strong>Open science practices:</strong>
+Does the paper adhere to open science practices like sharing data, code, or materials?
+How might open science principles improve transparency and reproducibility?</p></li>
+<li><p><strong>Innovation:</strong>
+Does the paper introduce innovative approaches, tools, or algorithms that advance computational biology research?</p></li>
+</ul>
+</section>
+<section id="executive-summary">
+<h2>Executive summary<a class="headerlink" href="#executive-summary" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 10 minutes</p>
+<p>An executive summary is a concise, comprehensive document or section of a more extensive report, proposal, or paper.
+It briefly overviews the document’s main points, findings, recommendations, and critical elements.
+It gives busy executives, decision-makers, or stakeholders a quick and accessible understanding of the content without reading the entire document.</p>
+<p>Key characteristics of an executive summary include:</p>
+<ul class="simple">
+<li><p><strong>Brevity:</strong> It is succinct and to the point, distilling the most critical information into a limited word count or page length.</p></li>
+<li><p><strong>Clarity:</strong> It presents complex ideas and data clearly and easily understandable, using plain language and avoiding jargon.</p></li>
+<li><p><strong>Content highlights:</strong> It highlights the full document’s main objectives, findings, conclusions, and recommendations, offering a comprehensive overview.</p></li>
+<li><p><strong>Audience-centric:</strong> It is tailored to the needs and interests of the target audience, often senior decision-makers or busy professionals who need a quick grasp of the document’s essence.</p></li>
+<li><p><strong>No new information:</strong> It does not introduce new information or concepts not already covered in the full document; rather, it summarizes existing content.</p></li>
+<li><p><strong>Format and structure:</strong> It typically follows a structured format, with sections that mirror the organization of the entire document, such as an introduction, objectives, methods, results, conclusions, and recommendations.</p></li>
+</ul>
+<p>With your group, <strong>write a three-to-five-sentence executive summary</strong> of your chosen paper.
+Tailor the executive summary to judges for an “International Computational Biology Competition” about why your article deserves the award.
+In this scenario, the executive summary is your group’s chance to stand out among a sea of submissions and make a strong case for your research.
+It’s not just about summarizing; it’s about presenting your findings strategically—without exaggeration—to engage and impress the judges, prompting them to delve deeper into this article.</p>
+</section>
+<section id="panel-selection">
+<h2>Panel selection<a class="headerlink" href="#panel-selection" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 10 minutes</p>
+<p>Have groups with the same article anonymously submit executive summaries on <a class="reference external" href="https://app.tophat.com">Top Hat</a>.
+Briefly review the summaries and provide some feedback.</p>
+<p>Groups with different papers can vote with a multiple-choice question on which summary had the most efficient communication.
+Or the instructor can choose unilaterally.</p>
+</section>
+<section id="chatgpt-submissions">
+<h2>ChatGPT submissions<a class="headerlink" href="#chatgpt-submissions" title="Permalink to this heading">#</a></h2>
+<p>As a side experiment, I am submitting these texts made entirely with ChatGPT-3.5 without editing.
+I want to demonstrate the capabilities of generative AI.</p>
+<p>I started the chat with the following primer.</p>
+<blockquote>
+<div><p>I am going to give you several messages of text from my paper. Please pay close attention.</p>
+</div></blockquote>
+<p>After copying the main text (excluding figures, tables, and captions), I sent it the following message.</p>
+<blockquote>
+<div><p>Okay, you have seen all of the text from my scientific article.</p>
+<p>I would like you to draft a summary in at most five sentences.
+This draft, after edited by me, will be sent to judges for an International Computational Biology competition.
+This summary needs to impress the judges so that I can win the award to continue my studies. This means so much to me.</p>
+</div></blockquote>
+<p>The responses are shown below.</p>
+<p>For <a class="reference external" href="https://doi.org/10.1007/s10822-023-00516-2">10.1007/s10822-023-00516-2</a>:</p>
+<blockquote>
+<div><p>In this groundbreaking study, we investigated the membrane-disrupting potential of Pse-4, a member of the Pseudin peptide family, and unveiled its remarkable effectiveness in its hexameric form.
+Through a comprehensive analysis, we observed that hexameric Pse-4 induces a dynamic helix-coil transition during membrane simulation, leading to the formation of hydrogen bonds with the E. coli bacterial membrane.
+This interaction resulted in the creation of visible pores in the membrane, leading to deformation and increased permeability, allowing water molecules to penetrate the membrane shell.
+These findings shed light on the mechanism of action of hexameric Pse-4 and its potential as a therapeutic candidate for combating multi-drug resistant bacterial strains, offering exciting possibilities for future research and drug development in the field of computational biology.</p>
+</div></blockquote>
+<p>For <a class="reference external" href="https://doi.org/10.1021/acs.jcim.3c00945">10.1021/acs.jcim.3c00945</a>:</p>
+<blockquote>
+<div><p>In this groundbreaking study, a novel methodology for predicting cholestasis and other complex toxicological endpoints is presented.
+The approach integrates mechanistic insights and pharmacokinetic considerations, allowing for a more comprehensive assessment of compound toxicity.
+Through the use of low-level models and quantitative in vitro to in vivo extrapolation (QIVIVE), the method demonstrates superior sensitivity and predictive quality compared to traditional direct QSAR modeling.
+Importantly, this approach proves its robustness even when predicting structurally diverse compounds, emphasizing its potential for early drug development and safety assessment.
+The study’s innovative framework holds promise for advancing computational biology and supporting next-generation risk assessments.</p>
+</div></blockquote>
+</section>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "aalexmmaldonado/biosc1630-2023-fall",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./classes/activities"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<div class="footer-article-items footer-article__inner">
+<div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="02-activity-reading-for-gist.html" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Reading for gist</p>
+</div>
+</a>
+<a class="right-next" href="02-activity-role-based-analysis.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Role-based analysis</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div></div>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> Contents
+  </div>
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#form-groups">Form groups</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#article-selection">Article selection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Active reading</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summarizing">Summarizing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#annotating">Annotating</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-questions">Discussion questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#executive-summary">Executive summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panel-selection">Panel selection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt-submissions">ChatGPT submissions</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By <a href="https://www.aalexmmaldonado.com" target="_blank">Alex M. Maldonado</a> © Copyright 2023
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+  Last updated on Sep 10, 2023 at 09:25 PM.
+  <br/>
+</p>
+</div>
+<div class="footer-item">
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+<footer class="bd-footer">
+</footer>
+</body>
+</html>

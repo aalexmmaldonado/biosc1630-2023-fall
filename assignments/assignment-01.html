@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="2023-09-10T11:13:58-04:00" property="article:modified_time"/>
+<title>Assignment 01 - Guided reading — Pitt BIOSC 1630 - 2023 Fall</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" rel="preload"/>
+<link as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" rel="preload"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../_static/togglebutton.js"></script>
+<script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+<script data-domain="aalexmmaldonado.com/biosc1630-2023-fall" defer="defer" src="https://plausible.io/js/script.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../_static/sphinx-thebe.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'assignments/assignment-01';</script>
+<link href="www.aalexmmaldonado.com/biosc1630-2023-fall/assignments/assignment-01.html" rel="canonical"/>
+<link href="../_static/favicon.ico" rel="shortcut icon"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="assignment-02.html" rel="next" title="Assignment 02 - Proposal"/>
+<link href="index.html" rel="prev" title="Assignments"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<a class="navbar-brand logo" href="../index.html">
+<img alt="Logo image" class="logo__image only-light" src="../_static/biosc-1630-logo.svg"/>
+<script>document.write(`<img src="../_static/biosc-1630-logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+</a></div>
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../classes/lessons/index.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../classes/lessons/lesson-01.html">Lesson 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/lessons/lesson-02.html">Lesson 02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/lessons/lesson-03.html">Lesson 03</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../classes/activities/index.html">Activities</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/01-activity-practice-feedback.html">01 - Practice providing feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/01-activity-literature-search.html">01 - Finding literature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/02-activity-reading-for-gist.html">02 - Reading for gist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/02-activity-active-reading.html">02 - Active reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/02-activity-role-based-analysis.html">02 - Role-based analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/03-activity-method-recommendation.html">03 - Method recommendation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../classes/slides/index.html">Slides</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../classes/slides/slides-01.html">01 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/slides/slides-02.html">02 - Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/slides/slides-03.html">03 - Methodology</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Assignments</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Assignment 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignment-02.html">Assignment 02</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="paper/index.html">Paper</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="solutions/index.html">Solutions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources/comp-bio/index.html">Computational biology</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/comp-bio/journals.html">Scientific journals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/comp-bio/comp-bio-topics.html">Topics in computational biology</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources/presenting/index.html">Presenting</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/presenting/design-frameworks.html">Design frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/presenting/effective-strategies.html">Effective strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/presenting/accessibility.html">Accessibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../misc/index.html">Miscellaneous</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/interfaith-holidays.html">Interfaith holidays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/generative-ai-primer.html">Generative AI primer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/RAND-shopping-study.html">RAND shopping study</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/refs.html">References</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-to-class.html">Getting to class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/drop-in-discussions.html">Drop-in discussions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/class-time.html">Is it time for class?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Easter egg</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../easter-egg/index.html">Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../easter-egg/enigma-elites.html">Comp Bio Enigma Elites</a></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label></div>
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
+<div class="article-header-buttons">
+<div class="dropdown dropdown-source-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/issues/new?title=Issue%20on%20page%20%2Fassignments/assignment-01.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="../_sources/assignments/assignment-01.md" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+</ul>
+</div>
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Assignment 01 - Guided reading</h1>
+<!-- Table of contents -->
+
+</div>
+<div id="searchbox"></div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="assignment-01-guided-reading">
+<span id="assignment-01"></span><h1>Assignment 01 - Guided reading<a class="headerlink" href="#assignment-01-guided-reading" title="Permalink to this heading">#</a></h1>
+<p style="text-align: center;">
+<strong>Due</strong>: September 06, 2023 by 1:00 p.m.
+</p>
+<section id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this heading">#</a></h2>
+<p>This assignment aims to practice skills in effectively reading, comprehending, and engaging with research literature in computational biology.
+By analyzing a selected research article, you will practice identifying key components, addressing challenges, and building a deeper understanding of the content.</p>
+</section>
+<section id="select-article">
+<h2>Select article<a class="headerlink" href="#select-article" title="Permalink to this heading">#</a></h2>
+<p>Choose one article from the list below to complete this assignment.</p>
+<ul class="simple">
+<li><p>Wicky, B. I. M., Milles, L. F., Courbet, A., Ragotte, R. J., Dauparas, J., Kinfu, E., … &amp; Baker, D. (2022). Hallucinating symmetric protein assemblies. <em>Science</em>, <em>378</em>(6615), 56-61. DOI: <a class="reference external" href="https://doi.org/10.1126/science.add1964">10.1126/science.add1964</a>.</p></li>
+<li><p>Cess, C. G., &amp; Finley, S. D. (2020). Multi-scale modeling of macrophage—T cell interactions within the tumor microenvironment. <em>PLoS computational biology</em>, <em>16</em>(12), e1008519. DOI: <a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1008519">10.1371/journal.pcbi.1008519</a>.</p></li>
+<li><p>Sahlin, K., &amp; Mäkinen, V. (2021). Accurate spliced alignment of long RNA sequencing reads. <em>Bioinformatics</em>, <em>37</em>(24), 4643-4651. DOI: <a class="reference external" href="https://doi.org/10.1093/bioinformatics/btab540">10.1093/bioinformatics/btab540</a>.</p></li>
+</ul>
+</section>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
+<section id="pre-reading-reflection">
+<h3>Pre-reading reflection<a class="headerlink" href="#pre-reading-reflection" title="Permalink to this heading">#</a></h3>
+<p>This pre-reading section serves as a mental warm-up, priming you for active reading and engagement.
+It helps put you in the right mindset to digest the scientific article.</p>
+<p>First, read only the title and write <strong>one paragraph</strong> about your prior knowledge.
+Even if you are unfamiliar, write any supporting knowledge you could use to build off when reading the article.</p>
+<div class="admonition-motivation admonition">
+<p class="admonition-title">Motivation</p>
+<p>Keeping up-to-date with literature means quickly determining if an article is worth reading.
+Tons of papers come out daily, and most RSS feeds only provide the title.
+To orient myself, I make a quick judgment call based on the title, if the article is relevant, and how long it would take me to understand it.</p>
+</div>
+</section>
+<section id="active-reading">
+<h3>Active reading<a class="headerlink" href="#active-reading" title="Permalink to this heading">#</a></h3>
+<p>Active reading involves engaging with the text purposefully and interactively to enhance comprehension and retention.</p>
+<p>Read the article from start to finish.
+While reading, <strong>write down unfamiliar terms and concepts</strong> you encounter.
+Also, <strong>provide the definition or explanation</strong>.</p>
+<p>After every few paragraphs, stop reading and reflect.
+Then, write one sentence to describe your takeaway in your own words.
+You can put these into a <strong>list with at least eight bullet points</strong>.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>I am not requiring you to comprehend everything in the article fully.
+(If you do, great!)
+Your reflection does not need to be scientifically correct—just what you understand.
+For example,</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The authors are motivating why they choose ___ methods.
+They cite other studies that demonstrate that it is appropriate for this system because of ___ reasons.</p></li>
+</ul>
+</div></blockquote>
+<p>is a valid reflection.</p>
+</div>
+</section>
+<section id="contextualize">
+<h3>Contextualize<a class="headerlink" href="#contextualize" title="Permalink to this heading">#</a></h3>
+<p>Seeing where the article fits into its scientific field helps understand its contribution better.</p>
+<p>Pick one reference in the introduction that the article appears to build upon.
+Explain in one or two paragraphs <strong>how this article advances or continues from the reference</strong>.</p>
+<p>Pick another article that cites your article and <strong>explain why they mentioned it</strong> in one or two paragraphs.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure you cite these other articles!</p>
+</div>
+</section>
+<section id="challenges">
+<h3>Challenges<a class="headerlink" href="#challenges" title="Permalink to this heading">#</a></h3>
+<p>What challenges did you encounter when reading this article?
+For example:</p>
+<ul class="simple">
+<li><p>Was there a sentence or paragraph that was difficult to understand?</p></li>
+<li><p>Was the connection between a result and conclusion unclear?</p></li>
+<li><p>Were there any methods that did not make sense?</p></li>
+</ul>
+<p>You must write <strong>at least one paragraph</strong>.</p>
+</section>
+</section>
+<section id="submission">
+<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this heading">#</a></h2>
+<p>You may write in a word processor of your choice: <a class="reference external" href="https://www.microsoft.com/en-us/microsoft-365/word">Microsoft Word</a>, <a class="reference external" href="https://www.overleaf.com/">Overleaf</a>, <a class="reference external" href="https://typst.app/">typst</a>, <a class="reference external" href="https://www.markdownguide.org/">Markdown</a>, <a class="reference external" href="https://docs.google.com/">Google Docs</a>, <a class="reference external" href="https://clickup.com/">ClickUp</a>, <a class="reference external" href="https://www.libreoffice.org/">LibreOffice</a>, <a class="reference external" href="https://www.wps.com/">WPS Office</a>, etc.
+However, you must submit your assignment as a PDF in <a class="reference external" href="https://canvas.pitt.edu/">Canvas</a>.</p>
+</section>
+<section id="formatting">
+<h2>Formatting<a class="headerlink" href="#formatting" title="Permalink to this heading">#</a></h2>
+<p>Here are the guidelines for formatting your writing.</p>
+<ul class="simple">
+<li><p><strong>Page:</strong> Use standard letter-sized paper (8.5” x 11”).
+Set margins to 1 inch on all sides.</p></li>
+<li><p><strong>Font:</strong> Use a legible font such as Times New Roman, Arial, or Calibri.
+Use a font size of 12 points for all text.</p></li>
+<li><p><strong>Spacing:</strong> Use 1.5 spacing for the entire document, including the main text, headings, and references.</p></li>
+<li><p><strong>Paragraphs:</strong> Align text to the left margin (ragged right).
+There should be a blank line between paragraphs.</p></li>
+<li><p><strong>Headings:</strong> Headings should be concise and bolded.</p></li>
+<li><p><strong>Consistency:</strong> Maintain consistency in font usage, heading styles, spacing, and formatting throughout the document.</p></li>
+<li><p><strong>Citations:</strong> All citations must be in the APA format.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I am being specific in the formatting guidelines so you do not have to make a decision/worry about it.
+No points will be deducted if there are deviations from the format, like 0.75” margins or 1.0 spacing.
+I will allow you to resubmit the assignment if your submission is unreadable or incomprehensible; otherwise, I will treat it as late.</p>
+</div>
+</section>
+<section id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Permalink to this heading">#</a></h2>
+<p><strong>Points:</strong> 5</p>
+<p>The assignment is graded entirely based on the effort you put into addressing the prompts and demonstrating your engagement with the article.
+You will earn full points if you genuinely attempt to comprehend the content and fulfill the requirements.</p>
+<p>While this grading focuses on your engagement with the content, we acknowledge the importance of effective writing style and grammar in communicating your ideas.
+Therefore, we will provide feedback on writing style, grammar, and organization through comments.
+These comments will help you improve your communication skills and will not affect your assignment grade.</p>
+</section>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "aalexmmaldonado/biosc1630-2023-fall",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./assignments"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<div class="footer-article-items footer-article__inner">
+<div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="index.html" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Assignments</p>
+</div>
+</a>
+<a class="right-next" href="assignment-02.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Assignment 02 - Proposal</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div></div>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> Contents
+  </div>
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective">Objective</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-article">Select article</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-reading-reflection">Pre-reading reflection</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#active-reading">Active reading</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contextualize">Contextualize</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#challenges">Challenges</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submission">Submission</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formatting">Formatting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading">Grading</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By <a href="https://www.aalexmmaldonado.com" target="_blank">Alex M. Maldonado</a> © Copyright 2023
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+  Last updated on Sep 10, 2023 at 11:13 AM.
+  <br/>
+</p>
+</div>
+<div class="footer-item">
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+<footer class="bd-footer">
+</footer>
+</body>
+</html>

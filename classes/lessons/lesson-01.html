@@ -1,0 +1,996 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="2023-09-10T21:25:14-04:00" property="article:modified_time"/>
+<title>01 - Introduction — Pitt BIOSC 1630 - 2023 Fall</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="../../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" rel="preload"/>
+<link as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" rel="preload"/>
+<script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script>
+<script src="../../_static/underscore.js"></script>
+<script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../../_static/doctools.js"></script>
+<script src="../../_static/clipboard.min.js"></script>
+<script src="../../_static/copybutton.js"></script>
+<script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../../_static/togglebutton.js"></script>
+<script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+<script data-domain="aalexmmaldonado.com/biosc1630-2023-fall" defer="defer" src="https://plausible.io/js/script.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../../_static/sphinx-thebe.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'classes/lessons/lesson-01';</script>
+<link href="www.aalexmmaldonado.com/biosc1630-2023-fall/classes/lessons/lesson-01.html" rel="canonical"/>
+<link href="../../_static/favicon.ico" rel="shortcut icon"/>
+<link href="../../genindex.html" rel="index" title="Index"/>
+<link href="../../search.html" rel="search" title="Search"/>
+<link href="lesson-02.html" rel="next" title="02 - Reading"/>
+<link href="index.html" rel="prev" title="Classes"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<a class="navbar-brand logo" href="../../index.html">
+<img alt="Logo image" class="logo__image only-light" src="../../_static/biosc-1630-logo.svg"/>
+<script>document.write(`<img src="../../_static/biosc-1630-logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+</a></div>
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../syllabus.html">Syllabus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Lessons</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Lesson 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson-02.html">Lesson 02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson-03.html">Lesson 03</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../activities/index.html">Activities</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../activities/01-activity-practice-feedback.html">01 - Practice providing feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../activities/01-activity-literature-search.html">01 - Finding literature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../activities/02-activity-reading-for-gist.html">02 - Reading for gist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../activities/02-activity-active-reading.html">02 - Active reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../activities/02-activity-role-based-analysis.html">02 - Role-based analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../activities/03-activity-method-recommendation.html">03 - Method recommendation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../slides/index.html">Slides</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../slides/slides-01.html">01 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../slides/slides-02.html">02 - Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../slides/slides-03.html">03 - Methodology</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../assignments/assignment-01.html">Assignment 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../assignments/assignment-02.html">Assignment 02</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/paper/index.html">Paper</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../assignments/solutions/index.html">Solutions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/comp-bio/index.html">Computational biology</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/comp-bio/journals.html">Scientific journals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/comp-bio/comp-bio-topics.html">Topics in computational biology</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../resources/presenting/index.html">Presenting</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/presenting/design-frameworks.html">Design frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/presenting/effective-strategies.html">Effective strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../resources/presenting/accessibility.html">Accessibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../misc/index.html">Miscellaneous</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/interfaith-holidays.html">Interfaith holidays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/generative-ai-primer.html">Generative AI primer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/RAND-shopping-study.html">RAND shopping study</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/refs.html">References</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../admin/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/getting-to-class.html">Getting to class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/drop-in-discussions.html">Drop-in discussions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/class-time.html">Is it time for class?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Easter egg</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../easter-egg/index.html">Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../easter-egg/enigma-elites.html">Comp Bio Enigma Elites</a></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label></div>
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
+<div class="article-header-buttons">
+<div class="dropdown dropdown-source-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/issues/new?title=Issue%20on%20page%20%2Fclasses/lessons/lesson-01.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="../../_sources/classes/lessons/lesson-01.md" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+</ul>
+</div>
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>01 - Introduction</h1>
+<!-- Table of contents -->
+
+</div>
+<div id="searchbox"></div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<span id="class-01"></span><h1>01 - Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p style="text-align: center;">
+<object hspace="50">
+<b>August 30</b>
+</object>
+<object hspace="50">
+<a href="../slides/slides-01.html"><b>Slides</b></a>
+</object>
+<object hspace="50">
+<a class="reference internal" href="../syllabus.html#course-outcomes"><span class="std std-ref"><strong>Outcomes</strong></span></a>: C1, C7
+    </object>
+</p>
+<section id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Learn about your instructor.</p></li>
+<li><p>Identify relevant skills for computational biologists.</p></li>
+<li><p>Understand course structure and expectations.</p></li>
+<li><p>Learn guidelines for giving and receiving critical feedback.</p></li>
+<li><p>Compare and contrast different types of scientific articles and understand how these articles target different audiences.</p></li>
+<li><p>Learn strategies to find primary research articles that pertain to a question you care about.</p></li>
+</ul>
+</section>
+<section id="l1-meet-the-instructor">
+<h2>L1 - Meet the instructor<a class="headerlink" href="#l1-meet-the-instructor" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 10 minutes</p>
+<section id="rationale">
+<h3>Rationale<a class="headerlink" href="#rationale" title="Permalink to this heading">#</a></h3>
+<p>Begin the class with an introduction to the instructor.
+This will help the students connect with the instructor and begin a sense of belonging.
+Students are likelier to engage with course materials when they feel a personal connection to the instructor <span id="id1">[<a class="reference internal" href="../../resources/refs.html#id6" title="Young K Kim and Linda J Sax. Student–faculty interaction in research universities: differences by student gender, race, social class, and first-generation status. Research in Higher Education, 50:437–459, 2009. doi:10.1007/s11162-009-9127-x.">1</a>, <a class="reference internal" href="../../resources/refs.html#id5" title="Carmen M Amerstorfer and Clara Freiin von Münster-Kistner. Student perceptions of academic engagement and student-teacher relationships in problem-based learning. Frontiers in psychology, 12:4978, 2021. doi:10.3389/fpsyg.2021.713057.">2</a>]</span>.</p>
+</section>
+<section id="content">
+<h3>Content<a class="headerlink" href="#content" title="Permalink to this heading">#</a></h3>
+<p>A presentation that could include the following information.</p>
+<p><strong>Instructor background</strong></p>
+<p>Begin by sharing information about the instructor’s background, including their education, professional experience, and personal information that helps students relate.
+This could include where the instructor grew up, what inspired them to pursue a career in computational biology, and any interesting experiences or achievements.</p>
+<p><strong>Research interests</strong></p>
+<p>Discuss research interests and current projects that are relevant to computational biology.
+This could include the topics the instructor is studying, methods, and exciting findings or insights.</p>
+<p><strong>Teaching philosophy</strong></p>
+<p>Share the teaching philosophy and approach to the course.
+This could include goals for student learning, beliefs about effective teaching methods, and how to engage students in the course material.</p>
+</section>
+</section>
+<section id="d1-skills-for-computational-biologists">
+<h2>D1 - Skills for computational biologists<a class="headerlink" href="#d1-skills-for-computational-biologists" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 10 minutes</p>
+<section id="id2">
+<h3>Rationale<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>Computational biology is a rapidly growing field that requires a diverse set of skills.
+Technical skills such as programming and data analysis are essential for working with large datasets and developing computational models.
+However, soft skills such as communication at various levels of detail and collaboration are essential for working effectively in interdisciplinary teams.</p>
+</section>
+<section id="id3">
+<h3>Content<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Open up a <a class="reference external" href="https://app.tophat.com">Top Hat</a> discussion question and prompt the students to submit what skills should a successful computational biologist have.
+Make the responses pop-up on the screen with anonymous mode turned on.
+As answers are submitted, the instructor should discuss these aspects and add context.
+Encourage for everyone to submit something as this will contribute to their participation grade.</p>
+<p>After there is a lull in responses, move forward with slides that discuss what the instructor believes are important skills to have.</p>
+<section id="hard-skills">
+<h4>Hard skills<a class="headerlink" href="#hard-skills" title="Permalink to this heading">#</a></h4>
+<p>Hard skills are technical abilities or knowledge specific to a particular field.
+They can be learned through education, training, or on-the-job experience.</p>
+<ul class="simple">
+<li><p>Command line environment scripting like <a class="reference external" href="https://opensource.com/resources/what-bash">bash</a>.</p></li>
+<li><p>Programming languages such as</p>
+<ul>
+<li><p><a class="reference external" href="https://www.python.org/doc/essays/blurb/">Python</a>,</p></li>
+<li><p><a class="reference external" href="https://www.r-project.org/about.html">R</a>,</p></li>
+<li><p><a class="reference external" href="https://julialang.org/">Julia</a>,</p></li>
+<li><p><a class="reference external" href="https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for/">C++</a>.</p></li>
+</ul>
+</li>
+<li><p>Machine learning frameworks such as</p>
+<ul>
+<li><p><a class="reference external" href="https://pytorch.org/">PyTorch</a>,</p></li>
+<li><p><a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a>,</p></li>
+<li><p><a class="reference external" href="https://scikit-learn.org/">scikit-learn</a>,</p></li>
+<li><p><a class="reference external" href="https://keras.io/">Keras</a>.</p></li>
+</ul>
+</li>
+<li><p>Sequencing tools <span id="id4">[<a class="reference internal" href="../../resources/refs.html#id4" title="Aeshna Gupta, Disha Gangotia, and Indra Mani. Bioinformatics tools and software. Advances in Bioinformatics, pages 15–35, 2021. doi:10.1007/978-981-33-6191-1_2.">3</a>]</span>.</p></li>
+<li><p>Knowledge of</p>
+<ul>
+<li><p>molecular biology,</p></li>
+<li><p>cell biology,</p></li>
+<li><p>physiology,</p></li>
+<li><p>genetics,</p></li>
+<li><p>microbiology,</p></li>
+<li><p>biochemistry, etc.</p></li>
+</ul>
+</li>
+<li><p>Understanding of linear algebra, probability and statistics, and differential equations.</p></li>
+<li><p>Familiarity with visualization tools to effectively communicate data and results.
+For example,</p>
+<ul>
+<li><p><a class="reference external" href="https://matplotlib.org/">matplotlib</a>: A comprehensive library for creating static, animated, and interactive visualizations in Python;</p></li>
+<li><p><a class="reference external" href="https://seaborn.pydata.org/">seaborn</a>: A Python data visualization library based on matplotlib that provides a high-level interface for drawing attractive and informative statistical graphics;</p></li>
+<li><p><a class="reference external" href="https://plotly.com/">plotly</a>: An open-source data analytics and visualization tool that creates interactive charts for web browsers and supports multiple languages, such as Python, Julia, R, and MATLAB;</p></li>
+<li><p><a class="reference external" href="https://d3js.org/">D3.js</a>: A JavaScript library for manipulating documents based on data. It helps you bring data to life using HTML, SVG, and CSS;</p></li>
+<li><p><a class="reference external" href="https://p5js.org/">p5.js</a>: A JavaScript library for creative coding that makes coding accessible for artists, designers, educators, and beginners;</p></li>
+<li><p><a class="reference external" href="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a>: A vector graphics editor developed by Adobe Systems;</p></li>
+<li><p><a class="reference external" href="https://inkscape.org/">Inkscape</a>: An open-source vector graphics editor similar to Adobe Illustrator;</p></li>
+<li><p><a class="reference external" href="https://jmol.sourceforge.net/">Jmol</a>: A free and open source viewer of molecular structures with features for chemicals, crystals, materials and biomolecules;</p></li>
+<li><p><a class="reference external" href="https://www.biorender.com/">BioRender</a>: An online tool for creating scientific figures and illustrations;</p></li>
+<li><p><a class="reference external" href="https://www.gimp.org/">GIMP</a>: An open-source image editing program;</p></li>
+<li><p><a class="reference external" href="https://ccsb.scripps.edu/mgltools/">MGLTools</a>: A collection of methods for visualization and analysis of biomolecular systems;</p></li>
+<li><p><a class="reference external" href="https://imagemagick.org/index.php">ImageMagick</a>: A software suite to create, edit, compose, or convert bitmap images from the command line;</p></li>
+<li><p><a class="reference external" href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a>: A molecular visualization program for displaying, animating, and analyzing large biomolecular systems using 3-D graphics and built-in scripting;</p></li>
+<li><p><a class="reference external" href="http://circos.ca/">CIRCOS</a>: Designed for visualizing genomic data but can create figures from data in any field;</p></li>
+<li><p><a class="reference external" href="https://www.cgl.ucsf.edu/chimerax/">ChimeraX</a>: A program for the interactive visualization and analysis of molecular structures and related data;</p></li>
+<li><p><a class="reference external" href="https://www.blender.org/">Blender</a>: An open-source 3D creation suite.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="soft-skills">
+<h4>Soft skills<a class="headerlink" href="#soft-skills" title="Permalink to this heading">#</a></h4>
+<p>Soft skills are often called “people” or “interpersonal” skills and relate to how you interact with and relate to others.</p>
+<p><strong>Collaboration</strong></p>
+<p>Collaboration is a pivotal soft skill for computational biologists, enabling them to collaborate with diverse peers to attain shared objectives proficiently.
+Given the multidisciplinary nature of computational biology, which merges insights from various domains like biology, computer science, mathematics, and statistics, professionals often work within teams encompassing a range of expertise.</p>
+<p>Effective collaboration empowers computational biologists to harness their colleagues’ specialized knowledge, culminating in comprehensive and sensible solutions to intricate research problems.
+Team members pool their insights through synergy, build upon each other’s concepts, and offer constructive feedback and assistance, collectively surmounting challenges.
+Fostering collaboration cultivates innovation and creativity, as it urges team members to venture beyond conventional strategies and explore novel avenues.</p>
+<p><strong>Problem-solving</strong></p>
+<p>Problem-solving is a quintessential aptitude for computational biologists, equipping them to address intricate research quandaries and devise pragmatic remedies.
+Computational biology hinges on utilizing computational methodologies to dissect and decipher intricate biological datasets.</p>
+<p>The significance of problem-solving skills for computational biologists resides in their capacity to delineate the core challenges and constraints tied to a research problem.
+This encompasses deconstructing intricate predicaments into more manageable segments, employing logical deduction and critical evaluation to scrutinize the scenario from multiple angles, and deploying inventiveness and originality to foster pioneering solutions.</p>
+<p><strong>Critical thinking</strong></p>
+<p>Critical thinking is a pivotal competency for computational biologists, enabling them to dissect information judiciously and form well-considered judgments.
+In computational biology, computational approaches are harnessed to dissect and interpret expansive and intricate biological data.</p>
+<p>The essence of critical thinking for computational biologists is its capacity to evaluate evidence, pinpoint assumptions and biases, and entertain many viewpoints.
+This necessitates meticulous scrutiny and data analysis, contemplation of alternate explanations, and making sound decisions informed by the available evidence.</p>
+<p><strong>Creativity</strong></p>
+<p>Creativity is pivotal for computational biologists, furnishing them with the capability to spawn novel concepts and methodologies to confront challenges.
+Profound creativity skills are critical for computational biologists as they facilitate thinking beyond conventional paradigms, paving the way for inventive strategies in data analysis.
+This can encompass forging innovative algorithms or models or applying existing techniques in unprecedented ways. By harnessing creativity, computational biologists guide fresh insights and breakthroughs that might evade conventional approaches.</p>
+<p><strong>Emotional intelligence</strong></p>
+<p>Emotional intelligence takes center stage as a crucial skill for computational biologists, endowing them with the ability to comprehend and navigate their own emotions alongside those of their peers.
+Given the collaborative milieu of computational biology, which often entails cross-disciplinary teamwork, strong emotional intelligence bolsters effective communication and collaboration.</p>
+<p>For instance, a computational biologist adept in emotional intelligence can swiftly discern a colleague’s frustration or overwhelm, extending the appropriate support or aid.
+By showcasing robust emotional intelligence, computational biologists position themselves as adept leaders and communicators, unearthing new avenues for professional advancement.</p>
+<p><strong>Adaptability</strong></p>
+<p>Adaptability emerges as a pivotal skill for computational biologists, mirroring the perpetual evolution of the field.
+With continuous developments in technologies, methodologies, and techniques, computational biologists must seamlessly assimilate these shifts to remain current in their domain.</p>
+<p>Adaptability empowers computational biologists to swiftly amass and apply fresh skills and insights, all while remaining flexible in their problem-solving methodologies.
+This could involve mastering novel programming languages, staying abreast of the latest research advancements, or exploring innovative angles in data analysis.</p>
+<p><strong>Negotiation and conflict resolution</strong></p>
+<p>Negotiation and conflict resolution skills assume pivotal roles in the toolkit of computational biologists, capacitating them to navigate disagreements and disputes constructively.
+Computational biology’s collaborative framework often entails interaction with colleagues from diverse disciplines, and adept negotiation and conflict resolution skills facilitate effective communication and harmonious collaboration.</p>
+<p>Negotiation involves arriving at mutually advantageous agreements through dialogue and compromise.
+This entails pinpointing common ground, identifying shared objectives, and collaborating on solutions that cater to all parties involved. Conversely, conflict resolution entails the ability to address conflicts and discord constructively, which consists in discerning the underlying roots of the disagreement, fostering candid communication, and collaborating to generate solutions accepted by all.</p>
+<p><strong>Time management</strong></p>
+<p>Time management is important for computational biologists, empowering them to prioritize and manage their workload methodically.
+Juggling multiple projects is a norm in computational biology, necessitating adept allocation of time and resources to meet deadlines and accomplish objectives.</p>
+<p>Effective time management encompasses:</p>
+<ul class="simple">
+<li><p>Clear goal-setting and prioritization</p></li>
+<li><p>Breaking intricate tasks into manageable segments</p></li>
+<li><p>Employing tools like calendars and to-do lists to stay organized</p></li>
+</ul>
+<p>Furthermore, it entails adaptability to shifting circumstances, whether unexpected delays or novel priorities, and the flexibility to revise plans as necessary.</p>
+</section>
+</section>
+</section>
+<section id="l2-course-overview">
+<h2>L2 - Course overview<a class="headerlink" href="#l2-course-overview" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 30 minutes</p>
+<section id="id5">
+<h3>Rationale<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<p>Setting clear expectations for students at the beginning of a course can help them feel more confident and motivated.
+By providing a detailed overview of the course structure and expectations, you can help students understand what they need to do to succeed in the course.</p>
+</section>
+<section id="id6">
+<h3>Content<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<p>Provide an overview of the course structure and expectations, including the class format, grading policies, and important dates or deadlines.
+This will help students understand what is expected of them and how to succeed in the course.</p>
+</section>
+</section>
+<section id="d2-providing-and-receiving-feedback">
+<h2>D2 - Providing and receiving feedback<a class="headerlink" href="#d2-providing-and-receiving-feedback" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 5 minutes</p>
+<section id="id7">
+<h3>Rationale<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<p>Feedback is an essential part of the learning process.
+By providing constructive criticism, you can help students identify areas for improvement and develop their skills.
+However, it is also crucial for students to learn how to respond to feedback in a productive manner by reflecting on the feedback they receive and using it to improve their work.</p>
+</section>
+<section id="id8">
+<h3>Content<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<p>Introduce guidelines for giving and receiving critical feedback, including providing constructive criticism and responding to feedback in a productive manner.
+This will help students learn how to improve their work through feedback and how to provide helpful feedback to others.</p>
+<section id="importance-of-feedback">
+<h4>Importance of feedback<a class="headerlink" href="#importance-of-feedback" title="Permalink to this heading">#</a></h4>
+<p>Feedback is essential for writing and presentations because it promotes personal and professional growth by targeting critical aspects of one’s performance.
+With ongoing constructive feedback, an individual can hone in on skill sets in a very organized way.
+With feedback, the progression of growth is maintained.
+Bad habits are often overlooked and become permanent habits.
+Giving up is more likely to occur without proper structure and guidance.</p>
+<p>For writing, feedback is important because it helps you improve your writing skills.
+It can help you identify areas to improve, such as grammar, punctuation, or sentence structure.
+Feedback can also help you develop your ideas and arguments more effectively.
+You can learn how to communicate your ideas better and make your writing more engaging and persuasive by receiving feedback from others.
+Feedback can also help you develop your own voice as a writer.
+By receiving feedback from others, you can learn what works and what doesn’t work in your writing.
+This can help you develop a unique style that differentiates you from other writers.</p>
+<p>For presentations, feedback can be used as a gauge for audience engagement.
+Even a good presentation has at least a few things it can improve on.
+Opportunities to grow means feedback to be received.
+There will always be feedback to receive, whether positive or negative.
+Asking for feedback will also help improve your presentation skills.
+When people are asked to give feedback on a presentation, most of the feedback you will receive will be on your delivery or the slides.</p>
+<p>Getting helpful feedback can be a critical step—it can also be harder to find than you might expect.
+Honest feedback calls on you to be vulnerable and forces your feedback partner sometimes to deliver difficult constructive criticism.
+The good news is that deep and authentic feedback can encourage personal growth and a willingness to take creative risks.
+So, getting high-quality feedback that elevates your writing and presentation skills is essential.</p>
+</section>
+<section id="types-of-feedback">
+<h4>Types of feedback<a class="headerlink" href="#types-of-feedback" title="Permalink to this heading">#</a></h4>
+<p>There is no one-size-fits-all for feedback.
+While there are common characteristics of effective feedback, the form it takes will change across contexts.</p>
+<p>Types of feedback may include corrective, epistemic, suggestive, and epistemic + suggestive <span id="id9">[<a class="reference internal" href="../../resources/refs.html#id3" title="Nancyruth Leibold and Laura Marie Schwarz. The art of giving online feedback. Journal of Effective Teaching, 15(1):34–46, 2015.">4</a>]</span>.</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 17%"/>
+<col style="width: 42%"/>
+<col style="width: 42%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Purpose</p></th>
+<th class="head"><p>Sample language</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Corrective</p></td>
+<td><p>Corrective feedback is specific to how well the work aligns with the objectives.
+This feedback highlights areas where the author met expectations and areas for improvement.</p></td>
+<td><p>You do a great job addressing [objective].
+However, the assignment also asked for x, but x is not present.
+How might you address [objective]?</p></td>
+</tr>
+<tr class="row-odd"><td><p>Epistemic</p></td>
+<td><p>Epistemic feedback prompts authors to think more deeply about their work.
+It asks for further clarification, challenging authors to delve deeper into particular ideas.</p></td>
+<td><p>Could you say more about x? (You may also ask specific questions to which further clarification can or should respond.)</p></td>
+</tr>
+<tr class="row-even"><td><p>Suggestive</p></td>
+<td><p>Suggestive feedback gives authors advice on how to improve upon their work.
+It also underscores specific areas or ideas for expansion.</p></td>
+<td><p>Giving an example of [this concept] would make your description more straightforward.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Epistemic + Suggestive</p></td>
+<td><p>The combination of epistemic and suggestive feedback prompts authors to offer further clarification and specific suggestions.
+This can be a helpful combination because it asks authors to “say more” and provides specific suggestions for how they might do so.</p></td>
+<td><p>How did you reach this conclusion? Think about the point you made on page x.</p></td>
+</tr>
+</tbody>
+</table>
+<p>These particular types of feedback are not exclusive of each other.
+Commonly, the feedback you give will have elements of some, if not all, of these four types.
+What type you use at what point will depend on the goals, the purpose of the feedback, and the kinds of revisions and responses you are trying to solicit.</p>
+</section>
+<section id="characteristics-of-effective-feedback">
+<h4>Characteristics of effective feedback<a class="headerlink" href="#characteristics-of-effective-feedback" title="Permalink to this heading">#</a></h4>
+<p>Effective feedback is a cornerstone of successful learning in computational biology, as it plays a pivotal role in guiding students toward improvement and growth.
+To ensure that feedback serves its intended purpose, adhering to several guiding principles is crucial.</p>
+<p><strong>Targeted and concise</strong></p>
+<p>One common pitfalls in providing feedback is overwhelming authors with excessive information.
+While it’s natural to want to cover every aspect of their work, an overflow of feedback can lead to confusion and make it difficult for them to know where to begin.
+Identifying and communicating two to four main areas for improvement is advisable.
+By distilling your feedback to these core points, you help them focus their efforts on the most crucial aspects.
+This approach prevents them from feeling overwhelmed and provides a clear roadmap for their revision process.</p>
+<p><strong>Alignment with objectives</strong></p>
+<p>Feedback should always be tailored to the author’s main points to communicate to the audience.
+Rather than offering generic advice, link your feedback to the stated goals of the task.
+By making these connections, you can better focus on how your feedback contributes to their objectives.
+This alignment fosters a deeper understanding of the material and encourages students to engage with the content thoughtfully.</p>
+<p><strong>Action-oriented guidance</strong></p>
+<p>The essence of effective feedback lies in its actionable nature.
+Rather than solely identifying flaws, provide the author with clear and specific suggestions for revision.
+Highlight particular sections or elements within their work that could benefit from refinement and offer guidance on addressing those areas.
+This guidance should be tangible and practical as a step-by-step roadmap to enhance the work.</p>
+<p><strong>Timely feedback iterations</strong></p>
+<p>Feedback must improve effectiveness when provided too close to the final submission deadline.
+Be conscious of how much time the author can incorporate your feedback.
+Proposing large, substantial changes would not be productive for the author because they may not have enough time.
+Instead, establish a feedback loop that allows authors ample time to engage with your comments and make revisions.
+Frequent feedback opportunities before the deadline create an iterative process where they can progressively refine their work.
+This ongoing engagement facilitates improvements in the specific assignment and nurtures a deeper understanding of the subject matter over time.</p>
+</section>
+<section id="incorporating-feedback">
+<h4>Incorporating feedback<a class="headerlink" href="#incorporating-feedback" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Stay open-minded:</strong>
+Approach feedback with an open mindset.
+Recognize that feedback is not a critique of your abilities but an opportunity for improvement.
+A receptive attitude sets the stage for a constructive feedback loop.</p></li>
+<li><p><strong>Review and reflect:</strong>
+Take time to review the feedback you’ve received thoroughly.
+Read through the comments and suggestions carefully, making notes of the key areas highlighted for improvement.
+Reflect on how these areas align with your original goals for the writing or presentation.</p></li>
+<li><p><strong>Prioritize feedback:</strong>
+Not all feedback is created equal.
+Identify the most crucial points mentioned in the feedback.</p></li>
+<li><p><strong>Understand the Context:</strong>
+Contextualize the feedback within the larger scope of your work.
+Understand how the suggestions align with the purpose of your writing or presentation.
+This ensures that your revisions are aligned with your intended message and goals.</p></li>
+<li><p><strong>Plan revisions:</strong>
+Devise a clear plan for incorporating the feedback.
+Break down the revision process into actionable steps.
+This could involve rewriting specific sections, reorganizing content, or enhancing visual aids for presentations.</p></li>
+<li><p><strong>Implement changes:</strong>
+Start making the changes based on the feedback you’ve received.
+Be willing to rework sentences, rearrange paragraphs, or adjust slides.
+Don’t be afraid to experiment with different approaches to see what works best.</p></li>
+<li><p><strong>Seek clarification:</strong>
+If specific feedback points are unclear, seek clarification from the person who provided the feedback.
+Clearing up any uncertainties ensures you make accurate changes and fully grasp the intended suggestions.</p></li>
+<li><p><strong>Proofread and edit:</strong>
+After implementing the changes, proofread and edit your work meticulously.
+Ensure that your revisions flow seamlessly with the rest of the content. Address any grammatical or formatting issues arising during the revision process.</p></li>
+<li><p><strong>Share again for feedback:</strong>
+Please share your revised work with the same or other individuals for further feedback.
+This helps you gauge whether your revisions effectively address the initial concerns and whether the changes enhance the overall quality.</p></li>
+<li><p><strong>Reflect on the process:</strong>
+Take a moment to reflect on the entire feedback and revision process.
+Consider how you’ve evolved as a writer or presenter and the lessons you’ve learned.
+This reflective practice enhances your ability to apply feedback in the future.</p></li>
+<li><p><strong>Apply lessons learned:</strong>
+As you progress with your writing and presentation projects, apply the lessons you’ve learned from previous feedback experiences.
+This ongoing improvement cycle will contribute to your continuous growth and development.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="a1-feedback-practice">
+<h2>A1 - Feedback practice<a class="headerlink" href="#a1-feedback-practice" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 15 minutes</p>
+<p>Lead <a class="reference internal" href="../activities/01-activity-practice-feedback.html#activity-feedback-practice"><span class="std std-ref">this activity</span></a>.</p>
+</section>
+<section id="break">
+<h2>Break<a class="headerlink" href="#break" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 10 minutes</p>
+</section>
+<section id="d3-types-of-scientific-articles">
+<h2>D3 - Types of scientific articles<a class="headerlink" href="#d3-types-of-scientific-articles" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> __ minutes</p>
+<section id="id10">
+<h3>Rationale<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<p>Scientific literature is diverse and can be challenging for students to navigate.
+By introducing students to different types of scientific articles, you can help them develop the skills they need to evaluate scientific literature effectively.</p>
+</section>
+<section id="id11">
+<h3>Content<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<p>Compare and contrast different types of scientific articles, including primary research articles, review articles and opinion pieces.
+Discuss how these articles target different audiences and serve other purposes.</p>
+<section id="types-of-articles">
+<h4>Types of articles<a class="headerlink" href="#types-of-articles" title="Permalink to this heading">#</a></h4>
+<section id="primary">
+<h5>Primary<a class="headerlink" href="#primary" title="Permalink to this heading">#</a></h5>
+<p>A primary research article, often simply referred to as a “research article,” is a fundamental type of scientific literature that presents the original research conducted by the authors.
+These articles report on new findings, experiments, and studies conducted by researchers to answer specific research questions or test hypotheses.
+Primary research articles play a crucial role in advancing scientific knowledge by sharing novel discoveries and contributing to the ongoing discourse within a field.</p>
+<p>Key characteristics of a primary research article include:</p>
+<ul class="simple">
+<li><p><strong>Original research:</strong>
+Primary research articles document research that is conducted firsthand by the authors.
+This involves designing and executing experiments, collecting data, analyzing results, and drawing conclusions based on the data.</p></li>
+<li><p><strong>Standard format:</strong>
+They typically follow a structured format that includes sections such as Introduction, Methods, Results, and Discussion (commonly known as IMRAD).
+This format ensures consistency across articles and helps readers easily locate specific information.</p></li>
+<li><p><strong>Introduction:</strong>
+The introduction section of a primary research article provides background information on the research topic, outlines the research question or objective, and establishes the context for the study.</p></li>
+<li><p><strong>Methods:</strong>
+The methods section details the experimental design, materials used, data collection procedures, and statistical or analytical methods applied.
+This section allows other researchers to understand and replicate the study if necessary.</p></li>
+<li><p><strong>Results:</strong>
+The results section presents the findings of the research, often utilizing tables, graphs, figures, and other visual aids to convey the data.
+This section is focused on presenting raw data without extensive interpretation.</p></li>
+<li><p><strong>Discussion:</strong>
+In the discussion section, authors interpret their results, relate them to existing knowledge in the field, discuss implications, and sometimes propose future research directions.</p></li>
+<li><p><strong>Citations:</strong>
+Primary research articles include citations to previously published research that influenced the study’s design, methods, or interpretation.
+Proper citation acknowledges the contributions of other researchers and situates the study within the broader context of existing knowledge.</p></li>
+</ul>
+<p>Primary research articles in computational biology often focus on developing and applying computational techniques for analyzing biological data.
+These articles can illuminate underlying biological mechanisms and help advance our understanding of complex biological systems.
+They can also introduce new tools that can enhance other researchers’ work.
+By reading primary research articles, students and researchers in computational biology can stay up-to-date with the latest advancements in the field and learn about innovative techniques and approaches.</p>
+</section>
+<section id="review">
+<h5>Review<a class="headerlink" href="#review" title="Permalink to this heading">#</a></h5>
+<p>A review article is a type of scientific literature that aims to provide a comprehensive and synthesized overview of existing research on a specific topic.
+Unlike primary research articles that report original research findings, review articles analyze and compile information from various primary sources to present a coherent understanding of a particular subject.
+They serve as valuable resources for researchers, students, and professionals who seek to gain an in-depth understanding of a specific area of knowledge without going through many primary research papers.</p>
+<p>Key characteristics of a review article include:</p>
+<ul class="simple">
+<li><p><strong>Comprehensive analysis:</strong>
+Review articles offer a broad survey of the research landscape within a defined topic area.
+They aim to cover significant research findings, methodologies, trends, controversies, and gaps in the field.</p></li>
+<li><p><strong>Integration of research:</strong>
+Authors of review articles gather information from multiple primary research articles, often spanning different studies, experiments, and authors.
+This integration allows them to synthesize and consolidate the findings into a coherent narrative.</p></li>
+<li><p><strong>Objective presentation:</strong>
+Review articles may include the author’s interpretations but generally maintain a balanced and objective tone.
+The focus is on presenting the collective knowledge within the field rather than advancing new hypotheses or experimental data.</p></li>
+<li><p><strong>Structured format:</strong>
+Similar to primary research articles, review articles often follow a structured format.
+This typically includes an introduction that outlines the scope and purpose of the review, sections that delve into various aspects of the topic, and a conclusion that summarizes the essential findings and suggests potential future directions for research.</p></li>
+<li><p><strong>Citation of primary sources:</strong>
+Proper citation is a crucial aspect of review articles.
+Authors must provide citations for the primary research articles and studies they reference.
+This allows readers to trace back to the sources to explore specific topics in more detail.</p></li>
+</ul>
+<p>Review articles are particularly beneficial in several ways:</p>
+<ul class="simple">
+<li><p><strong>Efficient overview:</strong>
+They provide a concise and organized overview of a complex topic, saving readers time and effort in sifting through numerous primary sources.</p></li>
+<li><p><strong>Identifying trends and gaps:</strong>
+Review articles often highlight the evolution of ideas within a field, identify gaps in knowledge, and suggest potential research directions.</p></li>
+<li><p><strong>Educational resource:</strong>
+Review articles are helpful educational tools for students and newcomers to a field, as they offer a solid foundation for understanding the state of current knowledge.</p></li>
+<li><p><strong>Clarifying controversies:</strong>
+Review articles can help readers understand ongoing debates and controversies within a field by presenting multiple perspectives and interpretations.</p></li>
+</ul>
+</section>
+<section id="opinion">
+<h5>Opinion<a class="headerlink" href="#opinion" title="Permalink to this heading">#</a></h5>
+<p>An opinion piece, also known as an opinion article, is a type of written content that expresses the author’s personal viewpoints, interpretations, hypotheses, or reflections on a particular topic.
+Opinions are distinct from primary research and review articles in research and academia.
+While primary research articles present original research findings and review articles synthesize existing research, opinion pieces offer subjective perspectives, insights, or arguments related to a specific subject within a field.</p>
+<p>Key characteristics of an opinion piece in research include:</p>
+<ul class="simple">
+<li><p><strong>Subjective interpretation:</strong>
+Unlike primary research articles that rely on empirical data and evidence and review articles that synthesize existing research, opinion pieces are inherently subjective.
+They reflect the author’s viewpoints and interpretations.</p></li>
+<li><p><strong>Engagement with ideas:</strong>
+Opinion pieces often engage with broader concepts, theories, controversies, or trends within a field.
+Authors may provide critical analyses, propose alternative explanations, challenge prevailing norms, or speculate about future directions.</p></li>
+<li><p><strong>Exploratory nature:</strong>
+Opinion pieces are exploratory in nature.
+Authors use them as platforms to brainstorm ideas, encourage dialogue, and spark further investigation into specific topics.</p></li>
+<li><p><strong>Less formal structure:</strong>
+While primary research and review articles follow structured formats, opinion pieces may have a more flexible structure.
+However, they typically include an introduction that sets the context, a body presenting the author’s argument or perspective, and a conclusion summarizing key points.</p></li>
+<li><p><strong>Use of rhetorical devices:</strong>
+Authors of opinion pieces may use rhetorical devices such as anecdotes, metaphors, and persuasive language to effectively engage readers and convey their perspectives.</p></li>
+<li><p><strong>Stimulating discussion:</strong>
+Opinion pieces often serve as catalysts for discussion, inviting readers to consider alternative viewpoints and engage in thoughtful debate.</p></li>
+<li><p><strong>Varied audience:</strong>
+Opinion pieces can target experts within a field and a wider audience interested in the topic.
+They bridge the gap between specialized research and general public interest.</p></li>
+</ul>
+<p>Opinion pieces play a valuable role in research and academia by contributing to intellectual discourse, expanding the range of perspectives, and fostering critical thinking.
+They allow researchers to speculate, propose novel ideas, and challenge conventional wisdom.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="l3-how-to-find-scientific-articles">
+<h2>L3 - How to find scientific articles<a class="headerlink" href="#l3-how-to-find-scientific-articles" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> __ minutes</p>
+<section id="id12">
+<h3>Rationale<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<p>Finding relevant scientific literature is an essential skill for computational biologists.
+By providing strategies for effective searching, you can help students develop the skills to find primary research articles that pertain to their research interests.
+Search engines and databases are powerful tools for finding scientific literature.
+Still, students need to learn how to use them effectively.</p>
+</section>
+<section id="id13">
+<h3>Content<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<p>In the vast ocean of scientific knowledge, finding and searching for relevant literature requires both skill and strategy.
+This involves not only utilizing search engines but also adopting a systematic approach that leverages advanced search techniques, digital libraries, and critical evaluation.</p>
+<section id="searching">
+<h4>Searching<a class="headerlink" href="#searching" title="Permalink to this heading">#</a></h4>
+<p>Navigating the vast expanse of scientific literature requires navigational tools, and digital libraries and databases.
+These platforms provide access to an immense array of research articles, conference papers, reviews, and more.</p>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 53%"/>
+<col style="width: 27%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Resource</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Scope</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://scholar.google.com/">Google Scholar</a></p></td>
+<td><p>Google Scholar is a free academic search engine that indexes the full text or metadata of scholarly literature across an array of publishing formats and disciplines.</p></td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></p></td>
+<td><p>PubMed is a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics.</p></td>
+<td><p>Life sciences</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.semanticscholar.org/">Semantic Scholar</a></p></td>
+<td><p>Semantic Scholar is a free, AI-powered research tool for scientific literature, based at the Allen Institute for AI.</p></td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.lens.org/lens/search/scholar/structured">lens</a></p></td>
+<td><p>Lens is a free scholarly search and citation index tool based on open-source data provided by Cambia, an Australian non-profit organization.</p></td>
+<td><p>All</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore</a></p></td>
+<td><p>Digital library is a research database for discovery and access to journal articles, conference proceedings, technical standards, and related materials.</p></td>
+<td><p>Electronics, Electrical engineering, Computer science</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.scopus.com/">Scopus</a></p></td>
+<td><p>Scopus uniquely combines a comprehensive, expertly curated abstract and citation database with enriched data and linked scholarly literature across a wide variety of disciplines.</p></td>
+<td><p>All</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="advanced-search-techniques">
+<h4>Advanced search techniques<a class="headerlink" href="#advanced-search-techniques" title="Permalink to this heading">#</a></h4>
+<p>How you use the search bar can dramatically impact the quality of the search results.
+For example, you must carefully choose keywords that are not too restrictive or broad.
+Advanced searching techniques can be used to find articles:</p>
+<ul class="simple">
+<li><p>Use boolean operators like <code class="docutils literal notranslate"><span class="pre">AND</span></code>, <code class="docutils literal notranslate"><span class="pre">OR</span></code>, and <code class="docutils literal notranslate"><span class="pre">NOT</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">"</span> <span class="pre">"</span></code> operator makes sure that the exact phrase is present;</p></li>
+<li><p>Specify a number range like <code class="docutils literal notranslate"><span class="pre">2004..2007</span></code>;</p></li>
+<li><p>Similar words can be specified with a preceding <code class="docutils literal notranslate"><span class="pre">~</span></code>;</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">*</span></code> wildcard can be used as a fill-in-the-blank;</p></li>
+</ul>
+<p>By strategically combining these techniques, researchers enhance the precision and relevance of their search results.</p>
+</section>
+<section id="critical-evaluation">
+<h4>Critical evaluation<a class="headerlink" href="#critical-evaluation" title="Permalink to this heading">#</a></h4>
+<p>The critical evaluation of scientific literature holds paramount importance for researchers seeking to leverage the power of data analysis and computational techniques in biological research.
+As you navigate this multidisciplinary field, applying a discerning approach to assess the credibility and relevance of the sources you encounter is essential.</p>
+<p>Begin your evaluation by scrutinizing the expertise and credentials of the authors.
+Look for authors with a solid foundation in biology and computational methods, as this dual expertise is vital for conducting meaningful research in this field.
+Each author does not have to have these skills individually, but all authors jointly should cover all relevant topics.
+Examine their academic qualifications and affiliations with renowned institutions, as these factors often correlate- with the quality of research presented.</p>
+<p>Publication information is a key factor in evaluating the timeliness and applicability of the information.
+Given the rapidly evolving nature of biology and computational methods, ensure that the article’s publication date aligns with the current state of knowledge.
+Moreover, it would be best if you were still skeptical of journals with a strong reputation for rigorous peer review and editorial standards.
+While these journals advertise that methodologies and analyses are the highest quality, there can still be some issues.
+You should be more skeptical of journals with low reputations or no peer review.
+I am not saying that these articles are bad, but that sometimes the criteria for publication are less stringent.</p>
+<p>Research methods play a pivotal role in computational biology research.
+Evaluate the study’s research design, paying particular attention to the integration of computational methods with biological questions.
+Assess the sample size, experimental design, simulation parameters, appropriate implementation of algorithms, data collection, and analysis.
+A well-designed study should effectively combine computational tools with biological insights to yield robust and relevant results.</p>
+<p>As you delve into the results and interpretation of a computational biology study, seek a clear presentation of data, appropriate statistical analyses, and insightful interpretation.
+The visualizations and computational models should facilitate a deeper understanding of complex biological phenomena.
+Consider the significance of the results in the broader biological context.
+Do the computational findings align with established biological principles and provide new insights that advance our understanding?</p>
+<p>References and citations serve as a foundation for the credibility of a computational biology study.
+Examine the range and quality of sources cited, including computational and biological references.
+Well-supported arguments draw on various reputable sources, such as peer-reviewed computational journals, biological databases, and interdisciplinary works.
+Additionally, take note of the study’s impact within the computational biology community by assessing the frequency of citations by other researchers.</p>
+<p>Peer review remains a cornerstone of credible scientific research, including computational biology.
+While peer-reviewed articles undergo evaluation by experts in both computational methods and biology, remember that this process doesn’t eliminate all potential sources of error.
+Furthermore, the replication of computational findings by independent researchers is a testament to the robustness of the methods and results.
+In this dynamic field, staying attuned to potential conflicts of interest is vital, as they could influence the computational analyses or interpretations.</p>
+<p>Lastly, consider the clarity of the writing and the accessibility of complex computational concepts.
+A well-written computational biology article should communicate intricate computational methodologies and their biological implications effectively.
+Striking a balance between technical terminology and broader accessibility ensures that the research can be understood and applied by researchers from various backgrounds.</p>
+</section>
+</section>
+</section>
+<section id="a2-guided-literature-search">
+<h2>A2 - Guided literature search<a class="headerlink" href="#a2-guided-literature-search" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 25 minutes</p>
+<p>Lead <a class="reference internal" href="../activities/01-activity-literature-search.html#activity-lit-search"><span class="std std-ref">this activity</span></a>.</p>
+</section>
+<section id="closing-remarks">
+<h2>Closing remarks<a class="headerlink" href="#closing-remarks" title="Permalink to this heading">#</a></h2>
+<p><strong>Duration:</strong> 5 minutes</p>
+<p>Conclude the class by summarizing the main points and allowing students to ask questions or provide feedback.
+You could prepare a short quiz or survey for students to complete to assess their understanding of the material covered in class.
+Summarizing the main points covered in class can help reinforce student learning.
+By allowing students to ask questions or provide feedback at the end of class, you can ensure that they understand the material covered and address any concerns or confusion.</p>
+</section>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "aalexmmaldonado/biosc1630-2023-fall",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./classes/lessons"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<div class="footer-article-items footer-article__inner">
+<div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="index.html" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">Classes</p>
+</div>
+</a>
+<a class="right-next" href="lesson-02.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">02 - Reading</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div></div>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> Contents
+  </div>
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l1-meet-the-instructor">L1 - Meet the instructor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale">Rationale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content">Content</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d1-skills-for-computational-biologists">D1 - Skills for computational biologists</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Rationale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Content</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hard-skills">Hard skills</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#soft-skills">Soft skills</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l2-course-overview">L2 - Course overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Rationale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Content</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d2-providing-and-receiving-feedback">D2 - Providing and receiving feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Rationale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Content</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#importance-of-feedback">Importance of feedback</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-feedback">Types of feedback</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-effective-feedback">Characteristics of effective feedback</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#incorporating-feedback">Incorporating feedback</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a1-feedback-practice">A1 - Feedback practice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#break">Break</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d3-types-of-scientific-articles">D3 - Types of scientific articles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Rationale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Content</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-articles">Types of articles</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#primary">Primary</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#review">Review</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#opinion">Opinion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#l3-how-to-find-scientific-articles">L3 - How to find scientific articles</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Rationale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Content</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#searching">Searching</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-search-techniques">Advanced search techniques</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-evaluation">Critical evaluation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a2-guided-literature-search">A2 - Guided literature search</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closing-remarks">Closing remarks</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By <a href="https://www.aalexmmaldonado.com" target="_blank">Alex M. Maldonado</a> © Copyright 2023
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+  Last updated on Sep 10, 2023 at 09:25 PM.
+  <br/>
+</p>
+</div>
+<div class="footer-item">
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+<footer class="bd-footer">
+</footer>
+</body>
+</html>

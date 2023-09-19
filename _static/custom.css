@@ -1,0 +1,47 @@
+a.reference.external:after {
+    content: "\2197";
+    font-size: .7em;
+    vertical-align: text-top;
+    margin-left: .1em;
+    color: grey;
+}
+
+@media print {
+
+    @page {
+        size: letter portrait;
+        margin: 0.5in 0.5in 0.5in 0.5in; /* Apply margin to the content area */
+    }
+
+    h2, h3, h4 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    pre, blockquote {
+        page-break-inside: avoid;
+    }
+
+    div.table {
+        page-break-before: auto;
+        page-break-inside: auto;
+        display: table;
+        position: relative;
+    }
+
+    div.admonition, div.sd-card, div.sd-card-body {
+        page-break-before: avoid;
+        page-break-inside: auto;
+    }
+
+    div.sd-card {
+        page-break-inside: auto;
+    }
+
+    div.sd-card-body {
+        page-break-before: avoid;
+        page-break-inside: auto;
+    }
+
+    
+}

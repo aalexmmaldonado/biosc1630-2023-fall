@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="2023-09-18T19:03:01-04:00" property="article:modified_time"/>
+<title>BIOSC 1630 Computational Biology Seminar — Pitt BIOSC 1630 - 2023 Fall</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="_static/custom.css" rel="stylesheet" type="text/css"/>
+<link href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" rel="preload"/>
+<link as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" rel="preload"/>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="_static/doctools.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="_static/togglebutton.js"></script>
+<script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+<script data-domain="aalexmmaldonado.com/biosc1630-2023-fall" defer="defer" src="https://plausible.io/js/script.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="_static/sphinx-thebe.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+<link href="www.aalexmmaldonado.com/biosc1630-2023-fall/index.html" rel="canonical"/>
+<link href="_static/favicon.ico" rel="shortcut icon"/>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="syllabus.html" rel="next" title="Syllabus for BIOSC 1630 Computational Biology Seminar"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<a class="navbar-brand logo" href="#">
+<img alt="Logo image" class="logo__image only-light" src="_static/biosc-1630-logo.svg"/>
+<script>document.write(`<img src="_static/biosc-1630-logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+</a></div>
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="classes/lessons/index.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="classes/lessons/lesson-01.html">Lesson 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/lessons/lesson-02.html">Lesson 02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/lessons/lesson-03.html">Lesson 03</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="classes/activities/index.html">Activities</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="classes/activities/01-activity-practice-feedback.html">01 - Practice providing feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/activities/01-activity-literature-search.html">01 - Finding literature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/activities/02-activity-reading-for-gist.html">02 - Reading for gist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/activities/02-activity-active-reading.html">02 - Active reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/activities/02-activity-role-based-analysis.html">02 - Role-based analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/activities/03-activity-method-recommendation.html">03 - Method recommendation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="classes/slides/index.html">Slides</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="classes/slides/slides-01.html">01 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/slides/slides-02.html">02 - Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/slides/slides-03.html">03 - Methodology</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="assignments/assignment-01.html">Assignment 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assignments/assignment-02.html">Assignment 02</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="assignments/paper/index.html">Paper</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="assignments/solutions/index.html">Solutions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="resources/comp-bio/index.html">Computational biology</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="resources/comp-bio/journals.html">Scientific journals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources/comp-bio/comp-bio-topics.html">Topics in computational biology</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="resources/presenting/index.html">Presenting</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="resources/presenting/design-frameworks.html">Design frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources/presenting/effective-strategies.html">Effective strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources/presenting/accessibility.html">Accessibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="misc/index.html">Miscellaneous</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="misc/interfaith-holidays.html">Interfaith holidays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/generative-ai-primer.html">Generative AI primer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="misc/RAND-shopping-study.html">RAND shopping study</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resources/refs.html">References</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="admin/scheduling.html">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin/getting-to-class.html">Getting to class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin/drop-in-discussions.html">Drop-in discussions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin/class-time.html">Is it time for class?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Easter egg</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="easter-egg/index.html">Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="easter-egg/enigma-elites.html">Comp Bio Enigma Elites</a></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label></div>
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
+<div class="article-header-buttons">
+<div class="dropdown dropdown-source-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/issues/new?title=Issue%20on%20page%20%2Findex.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="_sources/index.md" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+</ul>
+</div>
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__secondary" title="Toggle secondary sidebar">
+<span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>BIOSC 1630 <br/>Computational Biology Seminar</h1>
+<!-- Table of contents -->
+
+</div>
+<div id="searchbox"></div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="biosc-1630-br-computational-biology-seminar">
+<h1>BIOSC 1630 <br/>Computational Biology Seminar<a class="headerlink" href="#biosc-1630-br-computational-biology-seminar" title="Permalink to this heading">#</a></h1>
+<p align="left">
+    Fall 2023 •
+    <a href="https://www.pitt.edu/">University of Pittsburgh</a> •
+    <a href="https://www.biology.pitt.edu/">Department of Biological Sciences</a>
+</p>
+<p align="left">
+<a href="https://github.com/aalexmmaldonado/reptar/blob/main/biosc1630-2023-fall" target="_blank">
+<img alt="License" src="https://img.shields.io/github/license/aalexmmaldonado/biosc1630-2023-fall"/>
+</a>
+<a href="https://github.com/aalexmmaldonado/biosc1630-2023-fall" target="_blank">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/aalexmmaldonado/biosc1630-2023-fall"/>
+</a>
+<a href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/actions/workflows/gh-pages.yml" target="_blank">
+<img alt="GitHub repo size" src="https://github.com/aalexmmaldonado/biosc1630-2023-fall/actions/workflows/gh-pages.yml/badge.svg?branch=main"/>
+</a>
+<a href="https://jupyterbook.org/en/stable/intro.html" target="_blank">
+<img alt="Jupyter book" src="_static/jb-badge.svg"/>
+</a>
+</p>
+<p>Topics in computational biology will be explored using primary literature.
+Students will present research articles orally and complete a series of writing assignments that will culminate in producing a literature review paper.</p>
+<section id="open-education">
+<h2>Open education<a class="headerlink" href="#open-education" title="Permalink to this heading">#</a></h2>
+<p>We value accessible, open education that should be available to anyone who seeks it.
+Thus, all materials for this course are released under the <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">Attribution-ShareAlike 4.0 International</a> (CC BY-SA 4.0) license.</p>
+</section>
+<section id="feedback-and-reflection">
+<h2>Feedback and reflection<a class="headerlink" href="#feedback-and-reflection" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://web.hypothes.is/">hypothes.is</a> is used to provide feedback, ask questions, and reflect on the course materials.
+After making an account, you can annotate using the “Annotation sidebar” on the right-hand side of your screen.</p>
+</section>
+<section id="building-the-website">
+<h2>Building the website<a class="headerlink" href="#building-the-website" title="Permalink to this heading">#</a></h2>
+<p>This website is built using the <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a> framework.</p>
+<p>First, you can create a Python virtual environment with <code class="docutils literal notranslate"><span class="pre">python3.11</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">~/venvs/biosc1630-2023-fall</span></code>.
+You can install Python 3.11 on Linux using <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3.11</span> <span class="pre">python3.11-venv</span></code>.
+Technically, other versions of Python3 should work, but I have not validated it.
+Activate the new virtual environment with <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/venvs/biosc1630-2023-fall/bin/activate</span></code>.
+You can check that it is using the correct Python version.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>which<span class="w"> </span>python
+/home/alex/venvs/biosc1630-2023-fall/bin/python
+</pre></div>
+</div>
+<p>Use <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> from the <a class="reference external" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall">repository</a> to recreate the exact environment used to build the website.
+Build the website by running the <code class="docutils literal notranslate"><span class="pre">build.sh</span></code> script after cloning the <a class="reference external" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall">repository</a>.
+You can now view the website by opening <code class="docutils literal notranslate"><span class="pre">book/_build/html/index.html</span></code>.</p>
+<p>Once you are finished you can <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> the virtual environment.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>deactivate
+$<span class="w"> </span>which<span class="w"> </span>python
+/home/alex/miniconda3/bin/python
+</pre></div>
+</div>
+</section>
+<section id="local-copy">
+<h2>Local copy<a class="headerlink" href="#local-copy" title="Permalink to this heading">#</a></h2>
+<p>You can also get a local copy of this website.
+Go to the <a class="reference external" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall">repository</a> and switch to the <a class="reference external" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/tree/gh-pages"><code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch</a>.
+Then click the green <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">&gt;</span> <span class="pre">Code</span></code> button and download a zip file containing an up-to-date compiled website.</p>
+<p>Alternatively, you can click <a class="reference external" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/archive/refs/heads/gh-pages.zip">this link</a> to automatically download this zip.</p>
+</section>
+<section id="encryption">
+<h2>Encryption<a class="headerlink" href="#encryption" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://github.com/sobolevn/git-secret">git-secret</a> is used to encrypt course materials that are in preparation.
+Use <a class="reference external" href="https://sobolevn.me/git-secret/git-secret-add"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">secret</span> <span class="pre">add</span></code></a> to encrypt an untracked file.
+This will add a line to <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> and <code class="docutils literal notranslate"><span class="pre">.gitsecret/paths/mapping.cfg</span></code> to mark that it should be a <code class="docutils literal notranslate"><span class="pre">.secret</span></code> file.
+To stop encrypting the file, remove the lines in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> and <code class="docutils literal notranslate"><span class="pre">.gitsecret/paths/mapping.cfg</span></code> and delete the <code class="docutils literal notranslate"><span class="pre">.secret</span></code> file.</p>
+<p><a class="reference external" href="https://pre-commit.com/">pre-commit</a> hooks are used to ensure all desired files are encrypted before commits.
+Building the book before committing is beneficial as it will encrypt and decrypt files as necessary so you can see which files are changing.
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">secret</span> <span class="pre">reveal</span></code> will allow you to decrypt these files if you have access.</p>
+</section>
+<section id="hooks">
+<h2>Hooks<a class="headerlink" href="#hooks" title="Permalink to this heading">#</a></h2>
+<p>We have added a <a class="reference external" href="https://git-scm.com/docs/githooks#_post_merge"><code class="docutils literal notranslate"><span class="pre">post-merge</span></code> hook</a> in <code class="docutils literal notranslate"><span class="pre">.githooks</span></code> that will ensure the encrypted files are handled correctly.
+It will create backups of all decrypted files in the local repository if they exist.
+Then, it will decrypt the <code class="docutils literal notranslate"><span class="pre">.secret</span></code> files to ensure the unencrypted files are consistent.</p>
+<p>You must run the following command while in the repository to use these hooks.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>core.hooksPath<span class="w"> </span>.githooks
+</pre></div>
+</div>
+</section>
+<section id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this heading">#</a></h2>
+<p>I sincerely thank the following individuals who have played a significant role in supporting the development of this course and my teaching.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.engineering.pitt.edu/people/staff/emily-kerr/">Emily Kerr</a> for mentorship in pedagogy.</p></li>
+<li><p>Anita Mallinger for mentorship in writing and teaching.</p></li>
+<li><p><a class="reference external" href="https://www.biology.pitt.edu/person/jacob-durrant">Jacob Durrant</a>, <a class="reference external" href="https://www.biology.pitt.edu/person/danielle-spitzer">Danielle Spitzer</a>, <a class="reference external" href="https://www.biology.pitt.edu/person/liesje-steenkiste">Liesje Steenkiste</a>, and Kevin Randall for teaching advice and support.</p></li>
+<li><p><a class="reference external" href="https://www.biology.pitt.edu/person/valerie-oke">Valerie Oke</a> for providing previous course materials and guidance.</p></li>
+<li><p><a class="reference external" href="https://scholar.google.com/citations?user=BPoxstcAAAAJ">Ben J. Vincent</a> and <a class="reference external" href="http://www.hatfull.org/katie-wetzel">Katie Wetzel</a> for providing previous course materials.</p></li>
+<li><p><a class="reference external" href="https://www.loevliedl.com/">Dennis Loevlie</a> for debugging and testing this semester’s Easter Egg.</p></li>
+</ul>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "aalexmmaldonado/biosc1630-2023-fall",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<div class="footer-article-items footer-article__inner">
+<div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="right-next" href="syllabus.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Syllabus for BIOSC 1630 <br/> Computational Biology Seminar</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div></div>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div class="page-toc tocsection onthispage">
+<i class="fa-solid fa-list"></i> Contents
+  </div>
+<nav class="bd-toc-nav page-toc">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-education">Open education</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feedback-and-reflection">Feedback and reflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-website">Building the website</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-copy">Local copy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encryption">Encryption</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hooks">Hooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By <a href="https://www.aalexmmaldonado.com" target="_blank">Alex M. Maldonado</a> © Copyright 2023
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+  Last updated on Sep 18, 2023 at 07:03 PM.
+  <br/>
+</p>
+</div>
+<div class="footer-item">
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+<footer class="bd-footer">
+</footer>
+</body>
+</html>

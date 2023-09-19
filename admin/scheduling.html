@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.17.1: http://docutils.sourceforge.net/" name="generator"/>
+<meta content="2023-09-18T21:33:30-04:00" property="article:modified_time"/>
+<title>Scheduling — Pitt BIOSC 1630 - 2023 Fall</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" rel="stylesheet" type="text/css"/>
+<link href="../_static/togglebutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/sphinx-thebe.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" rel="stylesheet" type="text/css"/>
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" rel="preload"/>
+<link as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" rel="preload"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+<script>let toggleHintShow = 'Click to show';</script>
+<script>let toggleHintHide = 'Click to hide';</script>
+<script>let toggleOpenOnPrint = 'true';</script>
+<script src="../_static/togglebutton.js"></script>
+<script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+<script data-domain="aalexmmaldonado.com/biosc1630-2023-fall" defer="defer" src="https://plausible.io/js/script.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+<script src="../_static/design-tabs.js"></script>
+<script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+<script async="async" src="../_static/sphinx-thebe.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'admin/scheduling';</script>
+<link href="www.aalexmmaldonado.com/biosc1630-2023-fall/admin/scheduling.html" rel="canonical"/>
+<link href="../_static/favicon.ico" rel="shortcut icon"/>
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="getting-to-class.html" rel="next" title="Getting to class"/>
+<link href="../resources/refs.html" rel="prev" title="References"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="en" name="docsearch:language"/>
+</head>
+<body data-bs-root-margin="0px 0px -60%" data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-default-mode="" data-offset="180">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Search this book..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar">
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<a class="navbar-brand logo" href="../index.html">
+<img alt="Logo image" class="logo__image only-light" src="../_static/biosc-1630-logo.svg"/>
+<script>document.write(`<img src="../_static/biosc-1630-logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+</a></div>
+<div class="sidebar-primary-item"><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item navbar-nav active">
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../classes/lessons/index.html">Lessons</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../classes/lessons/lesson-01.html">Lesson 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/lessons/lesson-02.html">Lesson 02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/lessons/lesson-03.html">Lesson 03</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../classes/activities/index.html">Activities</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/01-activity-practice-feedback.html">01 - Practice providing feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/01-activity-literature-search.html">01 - Finding literature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/02-activity-reading-for-gist.html">02 - Reading for gist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/02-activity-active-reading.html">02 - Active reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/02-activity-role-based-analysis.html">02 - Role-based analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/activities/03-activity-method-recommendation.html">03 - Method recommendation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../classes/slides/index.html">Slides</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../classes/slides/slides-01.html">01 - Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/slides/slides-02.html">02 - Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../classes/slides/slides-03.html">03 - Methodology</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/index.html">Assignments</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/assignment-01.html">Assignment 01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/assignment-02.html">Assignment 02</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/paper/index.html">Paper</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/solutions/index.html">Solutions</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources/comp-bio/index.html">Computational biology</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/comp-bio/journals.html">Scientific journals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/comp-bio/comp-bio-topics.html">Topics in computational biology</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../resources/presenting/index.html">Presenting</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../resources/presenting/design-frameworks.html">Design frameworks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/presenting/effective-strategies.html">Effective strategies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resources/presenting/accessibility.html">Accessibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../misc/index.html">Miscellaneous</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../misc/interfaith-holidays.html">Interfaith holidays</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/generative-ai-primer.html">Generative AI primer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/RAND-shopping-study.html">RAND shopping study</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/refs.html">References</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Administration</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Scheduling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-to-class.html">Getting to class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drop-in-discussions.html">Drop-in discussions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class-time.html">Is it time for class?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Easter egg</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../easter-egg/index.html">Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../easter-egg/enigma-elites.html">Comp Bio Enigma Elites</a></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main class="bd-main" id="main-content">
+<div class="sbt-scroll-pixel-helper"></div>
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" for="__primary" title="Toggle primary sidebar">
+<span class="fa-solid fa-bars"></span>
+</label></div>
+</div>
+<div class="header-article-items__end">
+<div class="header-article-item">
+<div class="article-header-buttons">
+<div class="dropdown dropdown-launch-buttons">
+<button aria-expanded="false" aria-label="Launch interactive content" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-rocket"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://mybinder.org/v2/gh/aalexmmaldonado/biosc1630-2023-fall/main?urlpath=lab/tree/book/admin/scheduling.ipynb" target="_blank" title="Launch onBinder">
+<span class="btn__icon-container">
+<img src="../_static/images/logo_binder.svg"/>
+</span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+<li><a class="btn btn-sm dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://colab.research.google.com/github/aalexmmaldonado/biosc1630-2023-fall/blob/main/book/admin/scheduling.ipynb" target="_blank" title="Launch onColab">
+<span class="btn__icon-container">
+<img src="../_static/images/logo_colab.png"/>
+</span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-launch-thebe dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="initThebeSBT()" title="Launch Thebe">
+<span class="btn__icon-container">
+<i class="fas fa-play"></i>
+</span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-source-buttons">
+<button aria-expanded="false" aria-label="Source repositories" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fab fa-github"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-source-repository-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall" target="_blank" title="Source repository">
+<span class="btn__icon-container">
+<i class="fab fa-github"></i>
+</span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+<li><a class="btn btn-sm btn-source-issues-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="https://github.com/aalexmmaldonado/biosc1630-2023-fall/issues/new?title=Issue%20on%20page%20%2Fadmin/scheduling.html&amp;body=Your%20issue%20content%20here." target="_blank" title="Open an issue">
+<span class="btn__icon-container">
+<i class="fas fa-lightbulb"></i>
+</span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="dropdown dropdown-download-buttons">
+<button aria-expanded="false" aria-label="Download this page" class="btn dropdown-toggle" data-bs-toggle="dropdown" type="button">
+<i class="fas fa-download"></i>
+</button>
+<ul class="dropdown-menu">
+<li><a class="btn btn-sm btn-download-source-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" href="../_sources/admin/scheduling.ipynb" target="_blank" title="Download source file">
+<span class="btn__icon-container">
+<i class="fas fa-file"></i>
+</span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+<li>
+<button class="btn btn-sm btn-download-pdf-button dropdown-item" data-bs-placement="left" data-bs-toggle="tooltip" onclick="window.print()" title="Print to PDF">
+<span class="btn__icon-container">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+</ul>
+</div>
+<button class="btn btn-sm btn-fullscreen-button" data-bs-placement="bottom" data-bs-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode">
+<span class="btn__icon-container">
+<i class="fas fa-expand"></i>
+</span>
+</button>
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+</div></div>
+</div>
+</div>
+</div>
+<div class="onlyprint" id="jb-print-docs-body">
+<h1>Scheduling</h1>
+<!-- Table of contents -->
+
+</div>
+<div id="searchbox"></div>
+<article class="bd-article" role="main">
+<section class="tex2jax_ignore mathjax_ignore" id="scheduling">
+<h1>Scheduling<a class="headerlink" href="#scheduling" title="Permalink to this heading">#</a></h1>
+<p>To be fair for scheduling, I will use the script below.
+It uses a CSV-like text that puts students into their preferred slots if available.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># List of available presentation days</span>
+<span class="n">days</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"October 18"</span><span class="p">,</span> <span class="s2">"October 25"</span><span class="p">,</span> <span class="s2">"November 1"</span><span class="p">,</span> <span class="s2">"November 8"</span><span class="p">,</span> <span class="s2">"November 15"</span><span class="p">,</span> <span class="s2">"November 22"</span>
+<span class="p">]</span>
+<span class="n">slots_per_day</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># A CSV file where the first column is a student label, and then a</span>
+<span class="c1"># comma-separated ranking of dates.</span>
+<span class="n">csv_file</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"""</span>
+<span class="s2">student1,5,3,2,6,1,4</span>
+<span class="s2">student2,6,2,5,3,4,1</span>
+<span class="s2">student3,4,2,1,3,6,5</span>
+<span class="s2">student4,6,1,4,2,3,5</span>
+<span class="s2">student5,4,5,1,3,6,2</span>
+<span class="s2">student6,6,5,3,4,2,1</span>
+<span class="s2">student7,2,5,6,1,3,4</span>
+<span class="s2">student8,4,6,2,5,1,3</span>
+<span class="s2">student9,4,6,5,2,3,1</span>
+<span class="s2">student10,5,4,2,3,1,6</span>
+<span class="s2">student11,6,4,5,1,3,2</span>
+<span class="s2">student12,4,6,5,3,1,2</span>
+<span class="s2">student13,6,4,2,3,5,1</span>
+<span class="s2">student14,3,4,1,5,2,6</span>
+<span class="s2">student15,2,6,4,1,5,3</span>
+<span class="s2">student16,6,3,2,4,5,1</span>
+<span class="s2">student17,1,4,5,3,6,2</span>
+<span class="s2">student18,6,3,1,4,2,5</span>
+<span class="s2">student19,2,3,6,1,4,5</span>
+<span class="s2">student20,6,2,5,4,3,1</span>
+<span class="s2">student21,6,2,4,3,1,5</span>
+<span class="s2">"""</span>
+
+<span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">csv_file</span><span class="o">.</span><span class="n">splitlines</span><span class="p">():</span>
+    <span class="n">split_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">split_line</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># skips blank lines</span>
+        <span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="n">split_line</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"preferences"</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">split_line</span><span class="p">[</span><span class="mi">1</span><span class="p">:]]}</span>
+        <span class="p">)</span>
+
+<span class="c1"># Dictionary to store the schedule</span>
+<span class="n">schedule</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">day</span><span class="p">:</span> <span class="p">{</span><span class="s2">"slots"</span><span class="p">:</span> <span class="p">[],</span> <span class="s2">"max"</span><span class="p">:</span> <span class="n">max_per_day</span><span class="p">}</span>
+    <span class="k">for</span> <span class="n">day</span><span class="p">,</span> <span class="n">max_per_day</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">days</span><span class="p">,</span> <span class="n">slots_per_day</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># Shuffle the order of students for fairness</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">students</span><span class="p">)</span>
+
+<span class="c1"># Put all students in their first choice, or the next available choice</span>
+<span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">preference</span> <span class="ow">in</span> <span class="n">student</span><span class="p">[</span><span class="s2">"preferences"</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">schedule</span><span class="p">[</span><span class="n">preference</span><span class="p">][</span><span class="s2">"slots"</span><span class="p">])</span> <span class="o">&lt;</span> <span class="n">schedule</span><span class="p">[</span><span class="n">preference</span><span class="p">][</span><span class="s2">"max"</span><span class="p">]:</span>
+            <span class="n">schedule</span><span class="p">[</span><span class="n">preference</span><span class="p">][</span><span class="s2">"slots"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span>
+            <span class="k">break</span>
+
+<span class="c1"># Print the schedule</span>
+<span class="k">for</span> <span class="n">day</span><span class="p">,</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">schedule</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">day</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">info</span><span class="p">[</span><span class="s1">'slots'</span><span class="p">])</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Day 1: ['student4', 'student17', 'student3', 'student11']
+Day 2: ['student19', 'student7', 'student21', 'student2']
+Day 3: ['student14', 'student16', 'student18', 'student20']
+Day 4: ['student5', 'student9', 'student8', 'student15']
+Day 5: ['student1', 'student6', 'student10', 'student12']
+Day 6: ['student13']
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "aalexmmaldonado/biosc1630-2023-fall",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./admin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+<script>kernelName = 'python3'</script>
+</article>
+<footer class="bd-footer-article">
+<div class="footer-article-items footer-article__inner">
+<div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="../resources/refs.html" title="previous page">
+<i class="fa-solid fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">References</p>
+</div>
+</a>
+<a class="right-next" href="getting-to-class.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">Getting to class</p>
+</div>
+<i class="fa-solid fa-angle-right"></i>
+</a>
+</div></div>
+</div>
+</footer>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner container">
+<div class="footer-item">
+<p class="component-author">
+By <a href="https://www.aalexmmaldonado.com" target="_blank">Alex M. Maldonado</a> © Copyright 2023
+</p>
+</div>
+<div class="footer-item">
+</div>
+<div class="footer-item">
+<p class="last-updated">
+  Last updated on Sep 18, 2023 at 09:33 PM.
+  <br/>
+</p>
+</div>
+<div class="footer-item">
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+<footer class="bd-footer">
+</footer>
+</body>
+</html>
