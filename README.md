@@ -1,3 +1,5 @@
+**Note:** This repository has moved to [GitLab](https://gitlab.com/oasci/courses/pitt/biosc1630-2023f).
+
 <h1 align="center">BIOSC 1630</h1>
 
 <h3 align="center">Computational Biology Seminar</h3>
