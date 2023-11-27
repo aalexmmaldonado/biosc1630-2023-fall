@@ -21,7 +21,7 @@ validate:
 
 .PHONY: open-book
 open-book:
-	xdg-open ./book/_build/html/index.html 2>/dev/null
+	xdg-open public/index.html 2>/dev/null
 
 .PHONY: book
 book:
@@ -40,6 +40,7 @@ book:
 	poetry run jupyter-book build ./book
 	poetry run ./cleanup_printing.py
 	cp -rf ./book/classes/slides/pdfs ./book/_build/html/classes/slides/
+	cp -rf book/_build/html public/
 
 .PHONY: clean
 clean:
